@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, rgb(26, 25, 25), rgb(19, 19, 19));
+            background-attachment: fixed;
 
+            font-size: normal 20pt Arial;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste</h1>
+
+    <script>
+        // Essa forma é para forçar o usuário a digitar um numero inteiro.
+
+        /*var x = Number.parseInt(window.prompt('Digite um numero: '))
+
+        var y = Number.parseInt(window.prompt('Digite outro numero: '))
+
+        var z = x + y
+
+        window.alert('Sua soma é: ' + z)
+        */
+
+        var x = Number(window.prompt('Digite um numero: '))
+
+        var y = Number(window.prompt('Digite outro numero: '))
+
+        var z = x + y
+
+        window.alert(`A soma entre ${x} + ${y} é igual a: ${z}`)
+
+        //window.alert('Sua soma é: ' + String(z)) para o transformar o resultado a ser string. (Apesar de neste caso ja retornar em string o resultado).
+
+
+        // Dessa forma usando apenas (Number) o javascript se vira para somar um float e um int por exemplo.
+    </script>
+</body>
+</html>
