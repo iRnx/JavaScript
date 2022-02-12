@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, rgb(54, 54, 54), black);
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+            color: white;
+        }
+        
+        p {
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exercício 3</h1>
+    <script>
+        var nome = window.prompt('Qual é o seu nome? ')
+        var nome2 = nome.replace(' ', '') // dava tbm para usar o (nome.split(' ').join('') )para remover os espaços) para remover os espaços do nome da pessoa.
+
+        document.write(`<p> Olá ${nome}, Seu nome tem ${nome2.length} letras.</p>`)
+
+        document.write(`<p> Olá ${nome}, Seu nome em Maiúsculas é: ${nome.toUpperCase()}</p>`)
+
+        document.write(`<p> Olá ${nome}, Seu nome em Minúsculas é: ${nome.toLowerCase()} </p>`)
+
+        // Formatando Números
+
+        var n1 = 1543.5
+        var n2 = n1.toFixed(2).replace('.', ',') //duas casas decimais e trocar o ponto por virgula 
+        
+        n2.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}) // Para transformar o valor do n2 formatado para real (R$ 1.543, 50).
+        
+
+
+
+    </script>
+</body>
+</html>
