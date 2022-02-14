@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, rgb(35, 35, 90), white);
+            background-attachment: fixed;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
 
+    <script>
+        /*
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(`Está escrito assim: ${p1.innerText}`)
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'
+        */
+
+        /* Com o DOM, nos conseguimos ter acesso a qualqer elemento da arvore começando sempre com o window e ir navegando na arvore. */
+
+        /* getElementsByTagName('p')[0] serve para pegar a primeira tag de parágrafo  (Pegando por nome da tag) */
+
+        /* a variavel corpo, contem acesso até o body do html. e com isso poderiamos fazer alterações no body, por exemplo: corpo.style.background = 'black'
+        isso mudaria a cor do fundo do body. */
+
+        /* 
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(`Está escrito assim: ${p1.innerHTML}`)
+        */
+
+        /* O innerText retorna o parágrafo em formato de texto puro.*/
+        /* O innerHTML retorna o parágrafo com todas as formatações feitas. */
+
+        /*
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        var d = window.document.getElementById('msg')
+        d.style.background = '#BBBBBB'
+
+        var = d window.document.getElementById('msg').innerText = 'Teste' // Forma de escrever desde o inicio da arvore.
+        
+
+        d.innerText = 'Estou aguardando...' // Forma de escrever resumidamente
+
+        (getElementById: pegando elemento por id.)
+        */
+
+        /*
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        var d = window.document.getElementById('msg')
+
+        var n = window.document.getElementsByName('msg')[0]
+        n.innerText = 'Olá Mundo'
+
+        (getElementsByName: para pegar um elemento por name.)
+        */
+
+        
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        var d = window.document.getElementById('msg')
+
+        var n = window.document.getElementsByName('msg')[0]
+        
+        var c = window.document.getElementsByClassName('msg')[0].innerText = 'Testandooo'
+        
+        var r = window.document.querySelector('div#msg')
+        r.style.color = 'yellow'
+
+        // (querySelector: para pegar um elemento igual no css, div#msg para pegar com id. div.msg para pegar cm class.)
+
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
