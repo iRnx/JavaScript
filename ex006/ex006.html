@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
 
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, rgb(36, 36, 36), black);
+            background-attachment: fixed;
+            color: white;
+        }
+
+        input {
+            font: normal 15pt Arial;
+            width: 100px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        input:focus {
+            border: none;
+            outline: 0;
+            border-color: orange;
+            border-style: solid;
+            border-width: 2px;
+
+        }
+
+        strong {
+            color: orange;
+        }
+
+        div#res {
+            margin-top: 20px;
+        }
+
+        .botao {
+            border-radius: 10px;
+            border: none;
+            margin-left: 10px;
+            background-color: orange;
+            color: white;
+            
+        }
+
+        .botao:hover {
+            background-color: darkorange;
+            transition: 1s;
+            transform: scale(1.2);
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>Somando Valores</h1>
+    
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" class="botao" value="somar" onclick="somar()">
+    <div id="res"></div>
+
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} = <strong>${s}</strong>`
+
+        }
+    </script>
+</body>
+</html>
