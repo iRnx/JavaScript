@@ -1,7 +1,7 @@
 var agora = new Date()
 var diasem = agora.getDay()
 
-/* Para o get dai é assim que ele pega qual é o dia ↓↓
+/* Para o get é assim que ele pega qual é o dia ↓↓
 
     0 = Domingo
     1 = Segunda
