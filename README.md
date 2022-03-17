@@ -1,2 +1,3 @@
 # JavaScript
-Todos os meus códigos em javaScript
+Meu primeiro Curso com JavaScript, aqui está todos os códigos desenvolvidos no curso.
+
